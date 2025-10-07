@@ -8,6 +8,41 @@
     <title>Index</title>
 </head>
 <body>
-    
+    <form action="" id="form">
+        <div>
+          <td><input type="text" id="nom" name="nom" placeholder="Nom de la dépense" required> </td>
+        </div>
+
+        <div>
+           <td><input type="text" id="montant" name="montant" placeholder="Montant de la dépense en Ariary" required></td>
+        </div>
+
+        <div>
+            <select name="categorie" id="categorie">
+                <option value="nourriture">Nourriture</option>
+                <option value="transport">Transport</option>
+                <option value="materiel">Matériel</option>
+            </select>
+        </div>
+        
+        <div>
+            <button type="button" onclick="ajouter()">Valider</button>
+            <button type="button">Annuler</button>
+        </div>
+        <button>Colorer la dépense en nourriture</button>
+    </form>
+
+    <table id="tableau">
+        <thead>
+        <tr>
+            <th>Nom de la dépense</th>
+            <th>Montant(Ariary)</th>
+            <th>Catégorie</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
 </body>
 </html>
